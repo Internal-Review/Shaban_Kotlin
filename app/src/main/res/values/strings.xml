@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trending GitHub Repositories App</string>
+    <string name="build_by">Build by</string>
+</resources>

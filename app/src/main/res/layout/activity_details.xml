@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewRepoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRepoDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRepoName"
+        app:layout_constraintStart_toStartOf="@+id/textViewRepoName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepoName" />
+
+
+    <ImageView
+        android:id="@+id/ImageViewColor"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepoDescription" />
+
+    <TextView
+        android:id="@+id/textViewRepoLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="JAVA"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageViewColor"
+        app:layout_constraintStart_toEndOf="@+id/ImageViewColor"
+        app:layout_constraintTop_toTopOf="@+id/ImageViewColor" />
+
+    <ImageView
+        android:id="@+id/ImageViewStar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRepoLanguage"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepoLanguage"
+        app:layout_constraintTop_toTopOf="@+id/textViewRepoLanguage" />
+
+    <TextView
+        android:id="@+id/textViewRepoStarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="3,454"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageViewStar"
+        app:layout_constraintStart_toEndOf="@+id/ImageViewStar"
+        app:layout_constraintTop_toTopOf="@+id/ImageViewStar" />
+
+    <ImageView
+        android:id="@+id/ImageViewFork"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_fork"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRepoStarCount"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepoStarCount"
+        app:layout_constraintTop_toTopOf="@+id/textViewRepoStarCount" />
+
+    <TextView
+        android:id="@+id/textViewRepoForkCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="23,456"
+        app:layout_constraintBottom_toBottomOf="@+id/ImageViewFork"
+        app:layout_constraintStart_toEndOf="@+id/ImageViewFork"
+        app:layout_constraintTop_toTopOf="@+id/ImageViewFork" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
